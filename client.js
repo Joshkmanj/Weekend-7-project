@@ -1,7 +1,7 @@
 $(document).ready(readyNow)
 
-//initialized array for employees to be stored in, which isn't necessary for this particular project,
-//but can be used for more functionality later.
+//Initialized array for employees to be stored in, which isn't actually utilized for this particular project, but it can be
+// used for more functionality later. As of current, the employee array stores the information of employees past and present,
 let employeeArray =[];
 //Global variable created to hold an un-abridged total of the combined annual salaries
 let totalAnnualSalary= 0;
@@ -88,7 +88,12 @@ function salaryCalculator(salary){
     if ( (totalAnnualSalary/12) > 20000 ){
         console.log('Cost is too high');
         $('.costOutput').parent().css("background-color", "red")
-    }else{
-        $('.costOutput').parent().css("background-color", "inherit")
+        $('.costOutput').parent().css("box-shadow", "0px 0px 20px red")
+    }else if( (totalAnnualSalary/12) > 10000){
+        $('.costOutput').parent().css("background-color", "#ffa800")
+        $('.costOutput').parent().css("box-shadow", "0px 0px 20px #ffa800")
+    } else{
+        $('.costOutput').parent().css("background-color", "rgb(93, 196, 84)")
+        $('.costOutput').parent().css("box-shadow", "0px 0px 20px greenyellow")
     }//end color filter
 }//End salaryCalculator

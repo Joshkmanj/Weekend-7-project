@@ -1,15 +1,64 @@
 body{
     background-color: rgb(103, 129, 92);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
+#title-area{
+    background-color: rgb(228, 126, 10);
+    margin: 2% 0px;
+    padding: 10px;
+    display: block;
+}
+.inputBar{
+    text-align: center;
+    margin-top: 1%;
+    padding: 5px;
+    display: inline-block;
+}
+#button-holder{
+    text-align: end;
+    display: block;
+}
+.inputButton{
+    margin-top: 5px;
+    padding: 0px 30px;
+}
+
 table{
-    border: 4px solid rgb(3, 90, 49);
-    margin:10px;
-}
-thead, .emptyRow{
+    border: 6px solid rgb(0, 53, 28);
+    border-radius: 5px;
+    display: inline-table;
+    margin: 30px 1%;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+    border-spacing: 0px;
     background-color: rgb(96, 119, 97);
-    /* display: block;
-    height: 50px;
-    width:100%; */
 }
-/* .outputHolder{
-} */
+
+tr{
+    align-content: center;
+    height: 40px;
+}
+td,th{
+    border: 1px solid black;
+    border-top: 0px;
+    width: 10%;
+}
+#bottom-row{
+    border-left:1px solid black ;
+    width: 100%;
+}
+
+
+#output-holder{
+    display: block;
+}
+h3{
+    display: inline-block;
+    padding: 3px 20px;
+    background-color: rgb(93, 196, 84);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px greenyellow;
+}

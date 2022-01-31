@@ -11,49 +11,56 @@
 </head>
 
 <body>
-    <header>
-        <h1>jQuery Salary Calculator</h1>
+    <header id="title-area">
+        <h1>Salary Calculator</h1>
     </header>
     <main>
         <div class="inputBar">
-            <input class="firstInput" type="text" placeholder="First Name">
-            <input class="lastInput" type="text" placeholder="Last Name">
-            <input class="idInput" type="number" placeholder="ID Number">
-            <input class="titleInput" type="text" placeholder="Job Title">
-            <input class="salaryInput" type="number" placeholder="Annual Salary">
-            <button class="inputButton">Beep Boop</button>
+            <div id="input-holder">
+                <input class="firstInput" type="text" placeholder="First Name">
+                <input class="lastInput" type="text" placeholder="Last Name">
+                <input class="idInput" type="number" placeholder="ID Number">
+                <input class="titleInput" type="text" placeholder="Job Title">
+                <input class="salaryInput" type="number" placeholder="Annual Salary">
+            </div>
+
+            <div id="button-holder">
+                <button class="inputButton">Submit!</button>
+            </div> 
+
         </div>
-        <!-- <div class="outputHolder"> -->
             <table>
                 <thead>
-                    <tr>
+                    <tr class="top-row">
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>ID Number</th>
                         <th>Job Title</th>
                         <th>Annual Salary</th>
-                        <th><!-- Not sure what to put in here--></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody class="tableOutput">
-                <!-- <tr>
-                        <td>first</td>
-                        <td>last</td>
-                        <td>id</td>
-                        <td>title</td>
-                        <td class="salaryRow">salary</td>
-                        <td>    <button class="deleteButton">Delete</button></td></td>
-                    </tr> -->
+                    <!-- <tr> I'm leaving this in here so I can refer back to the structure of the parent/children tree
+                            <td>first</td>
+                            <td>last</td>
+                            <td>id</td>
+                            <td>title</td>
+                            <td class="salaryRow">salary</td>
+                            <td>    <button class="deleteButton">Delete</button></td></td>
+                         </tr> -->
                 </tbody>
-                <tfoot class="emptyRow">
-                   <tr><td><span></span></span></td></tr> 
+                
+                <tfoot>
+                   <tr id="bottom-row">
+                   </tr> 
                 </tfoot>
             </table>
-            <h3>
-                Monthly Cost <span class="costOutput">zero dollars, hurray!</span>
-            </h3>
-        <!-- </div> -->
-
+            <div class="output-holder">
+                <h3 class>
+                    Monthly Cost <span class="costOutput">$0</span>
+                </h3>
+            </div>
     </main>
     <footer>
 
